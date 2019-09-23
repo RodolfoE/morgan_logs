@@ -1,0 +1,21 @@
+::1 - - [23/Sep/2019:19:38:09 +0000] "GET / HTTP/1.1" 200 176 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
+::1 - - [23/Sep/2019:19:38:09 +0000] "GET /stylesheets/style.css HTTP/1.1" 200 111 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
+::1 - - [23/Sep/2019:19:38:09 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
+::1 - - [23/Sep/2019:19:38:45 +0000] "GET /users HTTP/1.1" 200 23 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
+GET /users 5.477
+GET /users 1.333
+GET /users 0.639
+GET /users 0.556
+POST /bla 190.594 -
+POST /bla 1980.012 200
+POST /bla 3185.116 200
+POST /bla 5343.392 200 -[Id]
+POST /bla 1586.210 200 -.Id
+POST /bla 1059.862 200 -
+POST /bla 1957.007 200 -
+POST /bla 34.966 200 -
+POST /bla 33.228 200 -
+POST /bla 4.965 200 -
+POST /bla 0.457 200 -
+POST /bla 3.362 200 -
+insert into ("POST", /bla 3.301 200 -
