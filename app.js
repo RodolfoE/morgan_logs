@@ -35,10 +35,10 @@ app.use(function (err, req, res, next) {
 
   if (req.method.toLowerCase() === "post" || req.method.toLowerCase() === "put") {
     //converter body passado pelo cliente da aplicação em base64
-    let bodyEmB64 = Buffer.from(JSON.stringify(req.body)).toString('base64');
+    let body = JSON.stringify(req.body).toString('base64');
 
     // Adiciona log de erro no arquivo passado no obj option do arquivo config/winston.js 
-    winston.error(`insert into erro_logs values('${err.status || 500}', '${err.message}', '${req.originalUrl}', '${req.method}', '${req.ip}', '${bodyEmB64}')`);
+    winston.error(`insert into erro_logs values('${err.status || 500}', '${err.message}', '${req.originalUrl}', '${req.method}', '${req.ip}', '${body}')`);
   } else {
     // Adiciona log de erro no arquivo passado no obj option do arquivo config/winston.js 
     winston.error(`insert into erro_logs values('${err.status || 500}', '${err.message}', '${req.originalUrl}', '${req.method}', '${req.ip}')`);
