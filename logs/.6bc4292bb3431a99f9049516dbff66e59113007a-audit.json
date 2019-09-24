@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "c:\\Users\\rodolfo\\Documents\\projetos\\loggin\\logs\\.6bc4292bb3431a99f9049516dbff66e59113007a-audit.json",
+    "files": [
+        {
+            "date": 1569333738447,
+            "name": "c:\\Users\\rodolfo\\Documents\\projetos\\loggin\\logs\\korok-info-2019-09.log",
+            "hash": "e6166d7b0aeed1077861a4850decfcdf"
+        }
+    ]
+}
