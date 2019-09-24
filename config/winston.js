@@ -15,19 +15,8 @@ var transportErr = new (transports.DailyRotateFile)({
     filename: `${appRoot}/logs/korok-error-%DATE%.log`,
     datePattern: 'YYYY-MM',
     maxSize: '20m',
-    maxFiles: '14d',
     json: false,
     level: 'error'
-});
-
-//guarda config de logs de info.
-var transportInfo = new (transports.DailyRotateFile)({
-    filename: `${appRoot}/logs/korok-info-%DATE%.log`,
-    datePattern: 'YYYY-MM',
-    maxSize: '20m',
-    maxFiles: '14d',
-    json: false,
-    level: 'info'
 });
 
 // instancia um logger com as confg abaixo
@@ -35,7 +24,7 @@ var logger = createLogger({
     format: format.combine(
         format.simple()
     ),
-    transports: [transportErr, transportInfo, new transports.Console(consoleTransport)],
+    transports: [transportErr,  new transports.Console(consoleTransport)],
     exitOnError: false, // pra que app não seja finalizado após uma execução
 });
 
